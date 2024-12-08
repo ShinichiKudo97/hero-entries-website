@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Home Page Content -->
+    <div id="home-page">
+        <h1>Hero List</h1>
+        <div class="container">
+            <div class="hero-list" id="hero-list">
+                <!-- Hero entries will be displayed here -->
+            </div>
+            <button class="add-hero-button" onclick="showEntryPage()">Add a Hero</button>
+        </div>
+    </div>
+
+    <!-- Entry Page Content -->
+    <div id="entry-page" class="entry-page">
+        <h1>Hero Creation Form</h1>
+        <div class="container">
+            <div class="top-row">
+                <div class="column">
+                    <label for="hero-name">Hero Name:</label>
+                    <input type="text" id="hero-name" placeholder="Enter hero name">
+                    <label for="passive">Passive:</label>
+                    <textarea id="passive" class="medium-textarea" placeholder="Describe the hero's passive"></textarea>
+                </div>
+                <div class="column">
+                    <label for="role">Role:</label>
+                    <input type="text" id="role" placeholder="Enter role">
+                    <label for="hero-background">Hero Background:</label>
+                    <textarea id="hero-background" class="medium-textarea" placeholder="Enter hero's background"></textarea>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="column">
+                    <label for="skill1-name">Skill 1 Name:</label>
+                    <input type="text" id="skill1-name" class="skill-name-box" placeholder="Enter Skill 1 Name">
+                    <label for="skill1">Skill 1:</label>
+                    <textarea id="skill1" class="long-textarea" placeholder="Describe Skill 1"></textarea>
+                </div>
+                <div class="column">
+                    <label for="skill2-name">Skill 2 Name:</label>
+                    <input type="text" id="skill2-name" class="skill-name-box" placeholder="Enter Skill 2 Name">
+                    <label for="skill2">Skill 2:</label>
+                    <textarea id="skill2" class="long-textarea" placeholder="Describe Skill 2"></textarea>
+                </div>
+                <div class="column">
+                    <label for="skill3-name">Skill 3 Name:</label>
+                    <input type="text" id="skill3-name" class="skill-name-box" placeholder="Enter Skill 3 Name">
+                    <label for="skill3">Skill 3:</label>
+                    <textarea id="skill3" class="long-textarea" placeholder="Describe Skill 3"></textarea>
+                </div>
+                <div class="column">
+                    <label for="ultimate-name">Ultimate Name:</label>
+                    <input type="text" id="ultimate-name" class="skill-name-box" placeholder="Enter Ultimate Name">
+                    <label for="ultimate">Ultimate:</label>
+                    <textarea id="ultimate" class="long-textarea" placeholder="Describe the Ultimate"></textarea>
+                </div>
+            </div>
+
+            <div class="quote">
+                <label for="quote">Hero Quote:</label>
+                <textarea id="quote" class="short-textarea" placeholder="Enter the hero's quotation"></textarea>
+            </div>
+
+            <div class="button-container">
+                <button class="save-button" onclick="saveHero()">Save</button>
+                <button class="back-button" onclick="showHomePage()">Back to Home</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
